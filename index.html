@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduvos University Website Design</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=Playwrite+AU+TAS:wght@100..400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+   <section class="header">
+
+<!--navigation section-->
+    <nav>
+        <a href="index.html"><img src="images/Universiteitswapen met Boek en Kolomme.png" class="logo"></a>
+    <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hiddenMenu()" aria-hidden="true"></i>
+<ul>
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="about.html">ABOUT</a></li>
+    <li><a href="courses.html">COURSES</a></li>
+    <li><a href="contact.html">CONTACT</a></li>
+</ul>
+    </div>
+    <i class="fa fa-bars" onclick="showMenu()" aria-hidden="true"></i>
+
+    </nav>
+<!--text box-->
+<div class="text-box">
+    <h1>Unlock a future of great opportunities</h1>
+    <p>Join Eduford University and embark on a journey of knowledge, growth, and success. <br> Our diverse range of programs and expert faculty are here to help you achieve your dreams.</p>
+    <a href="about.html" class="hero-btn">Visit Us to Know More</a>
+
+</div>
+
+   </section>
+
+
+   <!---Course-->
+
+   <section class="course">
+    <h1>Courses We Offer</h1>
+    <p>Explore our wide range of courses designed to empower you with knowledge and skills for a successful future.</p>
+    <div class="row">
+        <div class="course-col">
+            <h3>Computer Science</h3>
+            <p>Dive into the world of technology with our comprehensive Computer Science program. Learn programming, algorithms, and software development to prepare for a career in the tech industry.</p>
+        </div>
+        <div class="course-col">
+            <h3>Data Science</h3>
+            <p>Gain essential  skills and knowledge in this Data Science course. Explore managing and analyzing data to make informed decisions in various industries.</p>
+        </div>  
+            <div class="course-col">
+            <h3>Robotics</h3>
+            <p>Understand human-robot behavior  with our Robotics program. Understand the fundamentals of robots and explore and innovate!</p>
+        </div>
+    </div>
+
+    
+   
+
+
+   </section>
+<!---campus---->
+   <section class=" campus">
+    <h1>Our National Campus</h1>
+
+
+    <!--Bloemfontein-->
+       <div class="campus-col">
+        <img src="images/download ().jpg">
+                <div class="campus-text">
+                    <h3>Bloemfontein </h3>
+       
+        <div class="layer">
+    </div>
+</div>
+
+        <!--Cape Town-->
+
+  <div class="campus-col">
+        <img src="images/images (1).jpg">
+                <div class="campus-text">
+                    <h3>Cape Town </h3>
+       
+        <div class="layer"> <!--layer is used to darken the images as a hover overlay., 
+                           that brightens when hovering-->
+    </div>
+</div>
+
+        <!--Durban-->
+
+  <div class="campus-col">
+        <img src="images/images (2).jpg">
+                <div class="campus-text">
+                    <h3>Durban </h3>
+       
+        <div class="layer">
+    </div>
+</div>
+
+   </section>
+
+  <!-----javascript for toggle menu------>
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+     function hiddenMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>
