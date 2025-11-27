@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Eduvos University</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=Playwrite+AU+TAS:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <section class="header-about">
+        <!--navigation section-->
+        <nav>
+            <a href="index.html"><img src="images/Universiteitswapen met Boek en Kolomme.png" class="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hiddenMenu()" aria-hidden="true"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="courses.html">COURSES</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()" aria-hidden="true"></i>
+        </nav>
+
+        <!--about header text-->
+        <div class="text-box">
+            <h1>About Eduvos University</h1>
+            <p>Discover our mission, vision, and commitment to excellence in education</p>
+        </div>
+    </section>
+
+    <!--About section-->
+    <section class="about-content">
+        <div class="about-section">
+            <h2>Our Story</h2>
+            <p>Eduvos University has been at the forefront of higher education for decades, committed to providing world-class education that empowers students to achieve their dreams. Our institution brings together passionate educators, innovative programs, and state-of-the-art facilities to create an environment where learning thrives.</p>
+        </div>
+
+        <div class="about-section">
+            <h2>Our Mission</h2>
+            <p>To provide accessible, high-quality education that prepares students for successful careers and meaningful contributions to society. We believe in nurturing critical thinking, fostering innovation, and developing leaders who will make a positive impact in their fields and communities.</p>
+        </div>
+
+        <div class="about-section">
+            <h2>Our Vision</h2>
+            <p>To be a leading institution of higher learning that transforms lives through education, research, and community engagement. We envision a future where our graduates are pioneers, innovators, and changemakers who shape the world.</p>
+        </div>
+
+        <div class="about-section">
+            <h2>Why Choose Eduvos?</h2>
+            <ul class="about-list">
+                <li><strong>Expert Faculty:</strong> Learn from experienced professors and industry professionals dedicated to your success.</li>
+                <li><strong>Diverse Programs:</strong> Choose from a wide range of courses tailored to modern industry demands.</li>
+                <li><strong>Modern Facilities:</strong> Access state-of-the-art laboratories, libraries, and learning spaces.</li>
+                <li><strong>Campus Locations:</strong> Study at our campuses in Bloemfontein, Cape Town, and Durban.</li>
+                <li><strong>Career Support:</strong> Benefit from career guidance, internship opportunities, and industry connections.</li>
+                <li><strong>Global Community:</strong> Join a diverse community of students from around the world.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!--Call to action-->
+    <section class="cta-section">
+        <h2>Ready to Join Us?</h2>
+        <p>Start your journey towards a brighter future today</p>
+        <a href="contact.html" class="hero-btn">Get in Touch</a>
+    </section>
+
+    <!-----javascript for toggle menu------>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hiddenMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
