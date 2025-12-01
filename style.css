@@ -58,6 +58,11 @@ nav{
     cursor:pointer;
 }
 
+/* About page nav-links styling */
+.header-about nav .nav-links ul li a{
+    color: #000;
+}
+
 .text-box
 {
     width: 90%;
