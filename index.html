@@ -11,8 +11,11 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=Playwrite+AU+TAS:wght@100..400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<link rel="stylesheet" href="chatbot-styles.css">
 </head>
 <body>
+
+
    <section class="header">
 
 <!--navigation section-->
@@ -129,7 +132,30 @@
     </div>
 </section>
 
+<!--chatbot link-->
+  <script src="chatbot.js"></script> 
 
+
+<!--chatbot container-->
+<div id="chatbot-id">🗨️</div> <!-- 'windows' + '.' dot opens the window to choose emoji-->
+<div id="chatbot-container" class="hidden">
+  <div id="chatbot-header">
+    <span>EduBot </span>
+    <button id="close-btn">&times;</button>
+  </div>
+
+  <!--chatbot body-->
+  <div id="chatbot-body">
+    <div id="chatbot-messages"></div>
+  </div>
+  <div id="chatbot-input-container">
+    <input
+     type="text" 
+     id="chatbot-input"
+     placeholder="Type your message...">
+    <button id="send-btn">Send</button>
+  </div>
+</div>
 
   <!-----javascript for toggle menu------>
 <script>
@@ -137,10 +163,32 @@
     function showMenu(){
         navLinks.style.right = "0";
     }
-     function hiddenMenu(){
-        navLinks.style.right = "-200px";
-    }
 </script>
 
+<!-- Chatbot Container -->
+<div class="chatbot-container">
+  <div class="chatbot-header">
+    <span class="chatbot-title">Chat with us!</span>
+    <button class="chatbot-close" onclick="closeChatbot()">✕</button>
+  </div>
+  <div class="chatbot-messages" id="chatbotMessages">
+    <div class="chatbot-msg bot-msg">
+      <p>Hello! 👋 How can we help you today?</p>
+    </div>
+  </div>
+  <div class="chatbot-input-area">
+    <input type="text" class="chatbot-input" placeholder="Type your message..." id="chatbotInput">
+    <button class="chatbot-send" onclick="sendMessage()">Send</button>
+  </div>
+</div>
+
+<button class="chatbot-toggle" onclick="toggleChatbot()">
+  <i class="fa fa-comments"></i>
+</button>
+
+<script src="chatbot.js"></script>
+
+<!--chatbos.js link-->
+<script src="chatbot.js"></script>
 </body>
 </html>
