@@ -3,13 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Eduvos University</title>
+    <title>Courses - Eduvos University</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=Playwrite+AU+TAS:wght@100..400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="chatbot-styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        .courses-hero { min-height: 50vh; background: linear-gradient(135deg, #b3dc11 0%, #9db809 100%); display: flex; align-items: center; justify-content: center; text-align: center; color: #fff; padding: 40px 20px; }
+        .courses-hero h1 { font-size: 42px; margin-bottom: 10px; font-weight: 700; }
+        .courses-section { width: 85%; margin: 80px auto; }
+        .courses-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .course-card { background: #fff; border-radius: 12px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); padding: 30px; border-left: 4px solid #b3dc11; transition: all 0.3s ease; }
+        .course-card:hover { transform: translateY(-8px); box-shadow: 0 8px 30px rgba(179, 220, 17, 0.15); }
+        .course-icon { font-size: 32px; color: #b3dc11; margin-bottom: 12px; }
+        .enroll-btn { background: #b3dc11; color: #000; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: 700; }
+        .enroll-btn:hover { background: #9db809; }
+        .nav-links ul li a.active { color: #b3dc11 !important; font-weight: 700; }
+    </style>
 </head>
 <body>
     <!-- Chatbot Container -->
@@ -36,3 +48,4 @@
 <!--chatbos.js link-->
 <script src="chatbot.js"></script>
 </body>
+</html>
