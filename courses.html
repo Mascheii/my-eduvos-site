@@ -23,6 +23,71 @@
     </style>
 </head>
 <body>
-    
+    <header class="site-header">
+        <nav>
+            <a href="index.html"><img src="images/Universiteitswapen met Boek en Kolomme.png" class="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()" aria-hidden="true"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="courses.html" class="active">COURSES</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()" aria-hidden="true"></i>
+        </nav>
+    </header>
+
+    <section class="courses-hero">
+        <div>
+            <h1>Our Programs</h1>
+            <p>Explore our flagship programs designed to prepare you for careers in technology.</p>
+        </div>
+    </section>
+
+    <section class="courses-section">
+        <div class="courses-grid">
+            <article class="course-card">
+                <div class="course-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                <h2>Computer Science</h2>
+                <p><strong>Overview:</strong> Build strong foundations in programming, algorithms, systems, and software engineering. Our Computer Science program teaches theoretical concepts and practical skills used to design and develop modern software.</p>
+                <p><strong>Core Modules:</strong> Data Structures & Algorithms, Operating Systems, Databases, Software Engineering, Computer Networks, Web Development, Programming Languages.</p>
+                <p><strong>Duration:</strong> 3 years (full-time) / flexible part-time options available.</p>
+                <p><strong>Career Paths:</strong> Software Developer, Systems Engineer, DevOps Engineer, Backend/Frontend Engineer, Technical Lead.</p>
+                <a href="contact.html" class="enroll-btn">Enquire / Apply</a>
+            </article>
+
+            <article class="course-card">
+                <div class="course-icon"><i class="fa-solid fa-database"></i></div>
+                <h2>Data Science</h2>
+                <p><strong>Overview:</strong> Learn to collect, process, analyze and visualise data to make data-driven decisions. The program covers statistics, machine learning, data engineering and applied analytics.</p>
+                <p><strong>Core Modules:</strong> Statistics & Probability, Machine Learning, Data Mining, Data Engineering, Big Data Platforms, Data Visualization, Python & R for Data Science.</p>
+                <p><strong>Duration:</strong> 2-3 years (depending on diploma level) with short professional certificates available.</p>
+                <p><strong>Career Paths:</strong> Data Scientist, Machine Learning Engineer, Data Analyst, BI Developer, Data Engineer.</p>
+                <a href="contact.html" class="enroll-btn">Enquire / Apply</a>
+            </article>
+
+            <article class="course-card">
+                <div class="course-icon"><i class="fa-solid fa-robot"></i></div>
+                <h2>Robotics</h2>
+                <p><strong>Overview:</strong> Hands-on program combining mechanical systems, electronics, control systems and AI. Students design and program robots for industrial, research and consumer applications.</p>
+                <p><strong>Core Modules:</strong> Embedded Systems, Control Theory, Sensors & Actuators, Mechatronics, Robot Kinematics, Computer Vision, Reinforcement Learning.</p>
+                <p><strong>Duration:</strong> 3 years (full-time) with lab-based projects and capstone.</p>
+                <p><strong>Career Paths:</strong> Robotics Engineer, Automation Engineer, Researcher, Embedded Systems Developer, Autonomous Systems Engineer.</p>
+                <a href="contact.html" class="enroll-btn">Enquire / Apply</a>
+            </article>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <p>&copy; Eduvos University</p>
+    </footer>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){ navLinks.style.right = "0"; }
+        function hideMenu(){ navLinks.style.right = "-200px"; }
+    </script>
 </body>
 </html>
